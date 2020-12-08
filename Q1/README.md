@@ -1,10 +1,10 @@
 
-#Execution Instructions#
+# Execution Instructions
 
 Since this is a TCP connection, please run the server before running the client.
 
 
-### Other Details - Methodology ###
+### Other Details - Methodology 
 
 Timers - Each channel has a dedicated timer for it. For this I have used the time() which gets updated for each channel whenever a new packet is sent from it. To check for timeout, the difference between the present time and the saved sending time is compared with the timeout limit. Also select function is used with a time limit lower than the TIMEOUT time.
 This is to break out of the loop and check frequently in case of no read input. 
