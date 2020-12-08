@@ -1,4 +1,4 @@
-### Execution Instructions ###
+# Execution Instructions
 
 While running executable for RELAY, please use 88889 as a command line argument for one really and 888887 as the command line argument for the second relay.
 
@@ -9,7 +9,7 @@ This would set up one of the relays.
 Kindly run the relays and the server before executing the client.
 
 
-### Other Details - Methodology ###
+### Other Details - Methodology
 
 Timer - There is one dedicated timer for an entire window. For its implementation, a mix of the select function and the time() function have been used. The select function is used to check at regular intervals which are smaller than the actual TIMEOUT. The time() function is used to check whether or not timeout has occurred. Every time a packet is sent, the time() function sets a new start_time for the window.
 
